@@ -58065,7 +58065,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 416.69,
+      "width": 417,
       "height": 25
     },
     "_rotationX": 0,
@@ -58114,9 +58114,7 @@
       "__id__": 1475
     },
     "_enabled": true,
-    "alignMode": 1,
-    "_wasAlignOnce": {},
-    "isAlignOnce": {},
+    "alignMode": 0,
     "_target": null,
     "_alignFlags": 8,
     "_left": 3,
@@ -58960,7 +58958,7 @@
     },
     "_children": [],
     "_tag": -1,
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 1499
@@ -58984,7 +58982,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 46.68,
+      "width": 47,
       "height": 40
     },
     "_rotationX": 0,
@@ -59058,7 +59056,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 34.2,
+      "width": 34,
       "height": 40
     },
     "_rotationX": 0,
@@ -60877,7 +60875,7 @@
     },
     "_children": [],
     "_tag": -1,
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 1546
@@ -60901,7 +60899,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 46.68,
+      "width": 47,
       "height": 40
     },
     "_rotationX": 0,
@@ -60975,7 +60973,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 34.2,
+      "width": 34,
       "height": 40
     },
     "_rotationX": 0,
@@ -62794,7 +62792,7 @@
     },
     "_children": [],
     "_tag": -1,
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 1593
@@ -62818,7 +62816,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 46.68,
+      "width": 47,
       "height": 40
     },
     "_rotationX": 0,
@@ -62892,7 +62890,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 34.2,
+      "width": 34,
       "height": 40
     },
     "_rotationX": 0,
@@ -64711,7 +64709,7 @@
     },
     "_children": [],
     "_tag": -1,
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 1640
@@ -64735,7 +64733,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 46.68,
+      "width": 47,
       "height": 40
     },
     "_rotationX": 0,
@@ -64809,7 +64807,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 34.2,
+      "width": 34,
       "height": 40
     },
     "_rotationX": 0,

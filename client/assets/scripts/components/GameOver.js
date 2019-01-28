@@ -120,7 +120,7 @@ cc.Class({
             var ischadajiao = false;
             for(var j = 0; j < userData.actions.length; ++j){
                 var ac = userData.actions[j];
-                if(ac.type == "zimo" || ac.type == "ganghua" || ac.type == "dianganghua" || ac.type == "hu" || ac.type == "gangpaohu" || ac.type == "qiangganghu" || ac.type == "chadajiao"){
+                if(ac.type == "zimo" || ac.type == "hu" || ac.type == "ganghua" || ac.type == "dianganghua" || ac.type == "hu" || ac.type == "gangpaohu" || ac.type == "qiangganghu" || ac.type == "chadajiao"){
                     if(userData.pattern == "7pairs"){
                         actionArr.push("七对");
                     }
@@ -139,6 +139,9 @@ cc.Class({
                     
                     if(ac.type == "zimo"){
                         actionArr.push("自摸");
+                    }
+                    else if(ac.type == "hu"){
+                        actionArr.push("胡牌");
                     }
                     else if(ac.type == "ganghua"){
                         actionArr.push("杠上花");
@@ -167,7 +170,7 @@ cc.Class({
                     actionArr.push("明杠");
                 }
                 else if(ac.type == "wangang"){
-                    actionArr.push("弯杠");
+                    actionArr.push("过路杠");
                 }
                 else if(ac.type == "fanggang"){
                    actionArr.push("放杠");
