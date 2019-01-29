@@ -27,7 +27,7 @@ cc.Class({
             cc.sys.localStorage.setItem("account",account);
         }
         
-        cc.vv.http.sendRequest("/guest",{account:account},this.onAuth);
+        cc.vv.http.sendRequest("/guest",{account:account},this.onAuth);// /guest
     },
     
     onAuth:function(ret){

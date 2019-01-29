@@ -22,7 +22,7 @@ cc.Class({
         var gameChild = this.node.getChildByName("game");
         var myself = gameChild.getChildByName("myself");
         var pengangroot = myself.getChildByName("penggangs");
-        var realwidth = cc.director.getVisibleSize().width;
+        var realwidth = cc.view.getVisibleSize().width;//cc.director.getVisibleSize().width;
         var scale = realwidth / 1280;
         pengangroot.scaleX *= scale;
         pengangroot.scaleY *= scale;
@@ -31,14 +31,14 @@ cc.Class({
         this.node.on('peng_notify',function(data){
             //刷新所有的牌
             //console.log(data.detail);
-            var data = data.detail;
+            //var data = data.detail;
             self.onPengGangChanged(data);
         });
         
         this.node.on('gang_notify',function(data){
             //刷新所有的牌
             //console.log(data.detail);
-            var data = data.detail;
+            //var data = data.detail;
             self.onPengGangChanged(data.seatData);
         });
         
@@ -50,6 +50,7 @@ cc.Class({
         for(var i in seats){
             this.onPengGangChanged(seats[i]);
         }
+        //canvas.alignWithScreen();
     },
     
     onGameBein:function(){
@@ -144,7 +145,7 @@ cc.Class({
         }
         else if(side == "right"){
             pgroot.y = (index * 25 * 3);
-            pgroot.setLocalZOrder(-index);
+            pgroot.zIndex = -index;
         }
         else if(side == "myself"){
             pgroot.x = index * 55 * 3 + index * 10;                    

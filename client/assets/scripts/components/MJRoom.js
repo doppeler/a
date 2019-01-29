@@ -94,11 +94,11 @@ cc.Class({
     initEventHandlers:function(){
         var self = this;
         this.node.on('new_user',function(data){
-            self.initSingleSeat(data.detail);
+            self.initSingleSeat(data);
         });
         
         this.node.on('user_state_changed',function(data){
-            self.initSingleSeat(data.detail);
+            self.initSingleSeat(data);
         });
         
         this.node.on('game_begin',function(data){
@@ -117,7 +117,7 @@ cc.Class({
         });
                 
         this.node.on('huanpai_notify',function(data){
-            var idx = data.detail.seatindex;
+            var idx = data.seatindex;
             var localIdx = cc.vv.gameNetMgr.getLocalIndex(idx);
             self._seats2[localIdx].refreshXuanPaiState();
         });
@@ -129,13 +129,13 @@ cc.Class({
         });
         
         this.node.on('voice_msg',function(data){
-            var data = data.detail;
+            //var data = data.detail;
             self._voiceMsgQueue.push(data);
             self.playVoice();
         });
         
         this.node.on('chat_push',function(data){
-            var data = data.detail;
+            //var data = data.detail;
             var idx = cc.vv.gameNetMgr.getSeatIndexByID(data.sender);
             var localIdx = cc.vv.gameNetMgr.getLocalIndex(idx);
             self._seats[localIdx].chat(data.content);
@@ -143,7 +143,7 @@ cc.Class({
         });
         
         this.node.on('quick_chat_push',function(data){
-            var data = data.detail;
+            //var data = data.detail;
             var idx = cc.vv.gameNetMgr.getSeatIndexByID(data.sender);
             var localIdx = cc.vv.gameNetMgr.getLocalIndex(idx);
             
@@ -156,7 +156,7 @@ cc.Class({
         });
         
         this.node.on('emoji_push',function(data){
-            var data = data.detail;
+            //var data = data.detail;
             var idx = cc.vv.gameNetMgr.getSeatIndexByID(data.sender);
             var localIdx = cc.vv.gameNetMgr.getLocalIndex(idx);
             console.log(data);

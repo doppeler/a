@@ -41,7 +41,7 @@ cc.Class({
         
         //初始化网络事件监听器
         var self = this;
-        this.node.on('game_end',function(data){self.onGameEnd(data.detail);});
+        this.node.on('game_end',function(data){self.onGameEnd(data);});
     },
     
     showResult:function(seat,info,isZuiJiaPaoShou){
@@ -52,7 +52,7 @@ cc.Class({
         seat.node.getChildByName("dianpaocishu").getComponent(cc.Label).string = info.numdianpao;
         seat.node.getChildByName("angangcishu").getComponent(cc.Label).string = info.numangang;
         seat.node.getChildByName("minggangcishu").getComponent(cc.Label).string = info.numminggang;
-        seat.node.getChildByName("chajiaocishu").getComponent(cc.Label).string = info.numchadajiao;
+        seat.node.getChildByName("chajiaocishu").getComponent(cc.Label).string = info.numwangang;
     },
     
     onGameEnd:function(endinfo){
