@@ -8,7 +8,7 @@ var totalRooms = 0;
 
 var DI_FEN = [1,2,5];
 var MAX_FAN = [3,4,5];
-var JU_SHU = [4,8];
+var JU_SHU = [1,8];// 4
 var JU_SHU_COST = [2,3];
 
 function generateRoomId(){
