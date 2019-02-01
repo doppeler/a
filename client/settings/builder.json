@@ -1,17 +1,20 @@
 {
-  "appKey": "",
-  "appSecret": "",
+  "android-instant": {
+    "REMOTE_SERVER_ROOT": "",
+    "host": "",
+    "pathPattern": "",
+    "recordPath": "",
+    "scheme": "https",
+    "skipRecord": false
+  },
   "encryptJs": true,
   "excludeScenes": [],
   "fb-instant-games": {},
-  "includeAnySDK": false,
   "includeSDKBox": false,
   "inlineSpriteFrames": true,
   "inlineSpriteFrames_native": true,
-  "jailbreakPlatform": false,
   "md5Cache": true,
   "mergeStartScene": false,
-  "oauthLoginServer": "",
   "optimizeHotUpdate": false,
   "orientation": {
     "landscapeLeft": true,
@@ -20,18 +23,16 @@
     "upsideDown": false
   },
   "packageName": "com.babykylin.qpgames",
-  "privateKey": "",
   "qqplay": {
     "REMOTE_SERVER_ROOT": "",
     "orientation": "portrait"
   },
-  "renderMode": "0",
   "startScene": "7898c3aa-75db-4523-8b22-e60bf7d83784",
-  "title": "SCMJ",
+  "title": "mjgame",
   "webOrientation": "landscape",
   "wechatgame": {
     "REMOTE_SERVER_ROOT": "",
-    "appid": "wx6ac3f5090a6b99c5",
+    "appid": "wx22e19647e42699d3",
     "isSubdomain": false,
     "orientation": "landscape",
     "subContext": ""
