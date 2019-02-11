@@ -99,6 +99,7 @@ cc.Class({
                 this.getServerInfo();
             }.bind(this));
         }.bind(this));
+        
     },
 
     onBtnDownloadClicked:function(){
@@ -110,6 +111,7 @@ cc.Class({
         var SHOW_TIME = 3000;
         var FADE_TIME = 500;
         this._splash = cc.find("Canvas/splash");
+        /*
         if(true || cc.sys.os != cc.sys.OS_IOS || !cc.sys.isNative){
             this._splash.active = true;
             if(this._splash.getComponent(cc.Sprite).spriteFrame == null){
@@ -137,9 +139,10 @@ cc.Class({
             setTimeout(fn,33);
         }
         else{
+        */
             this._splash.active = false;
             callback();
-        }
+        //}
     },
     
     getServerInfo:function(){

@@ -5,10 +5,10 @@ cc.Class({
 
     properties: {
         lblName:cc.Label,
-        lblMoney:cc.Label,
+        //lblMoney:cc.Label,
         lblGems:cc.Label,
         lblID:cc.Label,
-        lblNotice:cc.Label,
+        //lblNotice:cc.Label,
         joinGameWin:cc.Node,
         createRoomWin:cc.Node,
         settingsWin:cc.Node,
@@ -92,7 +92,7 @@ cc.Class({
             }
         }
         
-        this.lblNotice.string = cc.vv.userMgr.notice.msg;
+        //this.lblNotice.string = cc.vv.userMgr.notice.msg;
         
         this.refreshInfo();
         this.refreshNotice();
@@ -153,7 +153,7 @@ cc.Class({
             else{
                 cc.vv.userMgr.notice.version = ret.version;
                 cc.vv.userMgr.notice.msg = ret.msg;
-                this.lblNotice.string = ret.msg;
+                //this.lblNotice.string = ret.msg;
             }
         };
         
@@ -175,7 +175,7 @@ cc.Class({
     
     initLabels:function(){
         this.lblName.string = cc.vv.userMgr.userName;
-        this.lblMoney.string = cc.vv.userMgr.coins;
+        //this.lblMoney.string = cc.vv.userMgr.coins;
         this.lblGems.string = cc.vv.userMgr.gems;
         this.lblID.string = "ID:" + cc.vv.userMgr.userId;
     },
@@ -226,12 +226,14 @@ cc.Class({
 
     // called every frame, uncomment this function to activate update callback
     update: function (dt) {
+        /*
         var x = this.lblNotice.node.x;
         x -= dt*100;
         if(x + this.lblNotice.node.width < -1000){
             x = 500;
         }
         this.lblNotice.node.x = x;
+        */
         
         if(cc.vv && cc.vv.userMgr.roomData != null){
             cc.vv.userMgr.enterRoom(cc.vv.userMgr.roomData);
